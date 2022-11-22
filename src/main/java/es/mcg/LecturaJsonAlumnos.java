@@ -166,7 +166,7 @@ public class LecturaJsonAlumnos {
             }
             printWriter.println("Lista de alumnos pendientes: ");
             printWriter.println(alumnosPendientes);
-            printWriter.println("Alumno mas cercano a la nota media de clase");
+            printWriter.print("Alumno mas cercano a la nota media de clase: ");
             printWriter.println(mejor);
 
         } 
