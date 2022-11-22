@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Fulanito",
+        "edad": "20",
+        "calificacion": "8.5",
+         "unidadesPendientes": "true"
+    },
+    {
+        "nombre": "Menganito",
+        "edad": "21",
+        "calificacion": "7.4",
+        "unidadesPendientes": "false"
+    },
+    {
+        "nombre": "Zutanito",
+        "edad": "19",
+        "calificacion": "6.9",
+        "unidadesPendientes": "false"
+    }
+]
