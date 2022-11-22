@@ -1,0 +1,7 @@
+Lista de alumnos pendientes: 
+[Nombre: Fulanito
+Edad: 20
+Calificacion: 8.5
+Unidades pendientes: true
+]
+Alumno mas cercano a la nota media de clase: Fulanito
