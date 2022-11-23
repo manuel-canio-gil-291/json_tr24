@@ -192,7 +192,8 @@ public class LecturaJsonAlumnos {
                 }
                 catch(IOException ioException2)
                 {
-                    ioException2.printStackTrace();
+                    LOGGER.error("No se pudo cerrar el FileWriter", ioException2);
+                    throw new AlumnoException("No se pudo cerrar el FileWriter", ioException2);
                 }
             }
         }
