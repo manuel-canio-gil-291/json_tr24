@@ -99,7 +99,7 @@ public class LecturaJsonAlumnos {
                     + "\nUnidades pendientes: " + unidadesPendientes + "\n";
         }
     }
-    public static void main(String[] args) 
+    public static void main(String[] args) throws AlumnoException 
     {
         File file = null;
         FileWriter fileWriter = null;
@@ -176,6 +176,7 @@ public class LecturaJsonAlumnos {
         catch (IOException ioException) 
         {
             LOGGER.error("Error mientras se trataba de leer el fichero "+file, ioException);
+            throw new AlumnoException("Error mientras se trataba de leer el fichero "+file, ioException);
         }
         finally
         {
