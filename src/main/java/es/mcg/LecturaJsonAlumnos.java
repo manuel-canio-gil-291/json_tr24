@@ -10,12 +10,15 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
 public class LecturaJsonAlumnos {
+    private static final Logger LOGGER = LogManager.getLogger();
     private static final String ENCODE = "UTF-8";
 
     public static class Json 
@@ -172,7 +175,7 @@ public class LecturaJsonAlumnos {
         } 
         catch (IOException ioException) 
         {
-            ioException.printStackTrace();
+            LOGGER.error("Error mientras se trataba de leer el fichero "+file, ioException);
         }
         finally
         {
